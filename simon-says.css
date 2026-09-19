@@ -110,3 +110,102 @@ body {
         
     font-size: 50px;
 }
+
+```css
+/* ================================
+   RESPONSIVE DESIGN
+   ================================ */
+
+/* Tablets */
+@media (max-width: 900px) {
+
+    .heading {
+        font-size: 42px;
+    }
+
+    .btn-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .line1,
+    .line2 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .yellow,
+    .purple,
+    .red,
+    .green {
+        width: 125px;
+        height: 125px;
+        margin: 30px;
+    }
+}
+
+
+/* ================================
+   MOBILE PHONES
+   ================================ */
+
+@media (max-width: 600px) {
+
+    body {
+        min-height: 100vh;
+        background-size: cover;
+        background-position: center;
+        overflow-x: hidden;
+    }
+
+    .heading {
+        font-size: 30px;
+        margin: 20px 10px;
+    }
+
+    .btn-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .line1,
+    .line2 {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .yellow,
+    .purple,
+    .red,
+    .green {
+        width: 100px;
+        height: 100px;
+        margin: 18px;
+        border-radius: 25px;
+    }
+}
+
+
+/* ================================
+   VERY SMALL PHONES
+   ================================ */
+
+@media (max-width: 380px) {
+
+    .heading {
+        font-size: 26px;
+        margin: 15px 5px;
+    }
+
+    .yellow,
+    .purple,
+    .red,
+    .green {
+        width: 85px;
+        height: 85px;
+        margin: 12px;
+        border-radius: 20px;
+    }
+}
+
